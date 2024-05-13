@@ -1,0 +1,12 @@
+{
+  "name": "steam-family-notifier",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "keywords": [],
+  "author": "Axel Terizaki <axel@teri-chan.net>",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "discord-webhook-node": "^1.1.8"
+  }
+}

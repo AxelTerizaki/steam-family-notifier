@@ -1,0 +1,14 @@
+{
+	"steamAPIKey": "",
+	"webhook": {
+		"url": "https://discord.com/api/webhooks/...",
+		"username": "Nanami Game Pass News",
+		"message": "Nouveau sur le Game Pass :"
+	},
+	"family": [
+		{
+			"name": "axel",
+			"steamID": "steamID64goeshere"
+		}
+	]
+}

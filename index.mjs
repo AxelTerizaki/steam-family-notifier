@@ -8,12 +8,14 @@ const configRaw = fs.readFileSync(resolve(__dirname, 'config.json'), 'utf-8');
 const config = JSON.parse(configRaw);
 
 const newGames = new Set();
+const currentGames = new Set();
 
 for (const gamer of config.family) {
-	let currentGames = new Set();
 	try {
 		const gameList = fs.readFileSync(resolve(__dirname, `games.${gamer.name}.txt`), 'utf-8');
-		currentGames = new Set([...gameList.split('\n')]);
+		for (const game of gameList.split('\n')) {
+			currentGames.add(game);
+		}
 	} catch(err) {
 		console.log(err);
 		// Do nothing
